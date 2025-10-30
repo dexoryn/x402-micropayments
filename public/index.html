@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="alternate icon" href="favicon.ico" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- HTML Meta Tags -->
+    <title>x402 Micropayments</title>
+    <meta name="description" content="This project demonstrates how to implement a paywall for video content using the x402 payment protocol. The web app allows users to pay a small amount of cryptocurrency (USDC) to access a paywalled video." />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://x402-micropayments.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="x402 Micropayments" />
+    <meta property="og:description" content="This project demonstrates how to implement a paywall for video content using the x402 payment protocol. The web app allows users to pay a small amount of cryptocurrency (USDC) to access a paywalled video." />
+    <meta
+      property="og:image"
+      content="https://opengraph.b-cdn.net/production/images/afea1e83-0adf-4492-9692-599da59e6182.png?token=nH7qEiqQ28Fyw91we3XTwxZpqk3vbIeIl3hjVfsNpHQ&height=266&width=500&expires=33297677916"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="x402-micropayments.vercel.app" />
+    <meta property="twitter:url" content="https://x402-micropayments.vercel.app/" />
+    <meta name="twitter:title" content="x402 Micropayments" />
+    <meta name="twitter:description" content="This project demonstrates how to implement a paywall for video content using the x402 payment protocol. The web app allows users to pay a small amount of cryptocurrency (USDC) to access a paywalled video." />
+    <meta
+      name="twitter:image"
+      content="https://opengraph.b-cdn.net/production/images/afea1e83-0adf-4492-9692-599da59e6182.png?token=nH7qEiqQ28Fyw91we3XTwxZpqk3vbIeIl3hjVfsNpHQ&height=266&width=500&expires=33297677916"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <i class="fas fa-bolt"></i>
+          <span>x402 - Pay Direct. Verify Instantly.</span>
+        </div>
+        <div class="nav-links">
+          <a href="https://www.x402.org/" target="_blank" class="nav-link">
+            <i class="fas fa-info-circle"></i> About x402
+          </a>
+          <a href="https://t.me/dexoryn" target="_blank" class="nav-link">
+            <i class="fab fa-telegram"></i> Telegram
+          </a>
+          <a href="https://github.com/dexoryn/x402-micropayments" target="_blank" class="nav-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://x.com/intent/follow?screen_name=dexoryn" target="_blank" rel="noopener noreferrer" class="cta-button secondary nav-follow-x" aria-label="Follow @dexoryn on X">
+            <i class="fab fa-twitter"></i> Follow @Dexoryn
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-bolt"></i>
+          <span>Powered by x402 Protocol</span>
+        </div>
+        <h1 class="hero-title">
+          Experience True Web3 Payments — 
+          <span class="gradient-text">Built by Me with X402</span>
+        </h1>
+        <p class="hero-description">
+         I developed this live demo to showcase how the X402 protocol enables instant, verifiable micropayments directly through HTTP — no middlemen, no delays. Discover how X402 redefines digital transactions with lightning-fast, on-chain USDC payments on Base.
+        </p>
+        <div class="hero-cta">
+          <a href="/authenticate" class="cta-button primary">
+            <i class="fas fa-play-circle"></i>
+            Try the Live Demo — Pay $0.10 USDC Instantly
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <i class="fas fa-bolt"></i>
+            <span>Instant Access</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>On-Chain Security</span>
+          </div>
+          <div class="stat-item">
+            <i class="fas fa-coins"></i>
+            <span>Real Web3 Utility</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="section-header">
+        <h2>Why x402?</h2>
+        <p>Why I Built with X402 — A New Standard for the Web Economy.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Lightning Fast</h3>
+          <p>Powered by X402’s 402 protocol, payments confirm instantly and unlock content in real time — a true Web2-to-Web3 bridge.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <h3>True Micropayments</h3>
+          <p>Demonstrating how developers can enable pay-per-request or pay-per-content flows in seconds — powered by on-chain USDC.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3>Base-Powered</h3>
+          <p>I integrated the Base L2 network to achieve sub-cent transaction fees and instant confirmations, making small payments finally practical.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3>Secure by Design</h3>
+          <p>Your payments are secured by blockchain technology. No credit card required.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Open Source Ready</h3>
+          <p>Every part of this demo is transparent and developer-friendly — a foundation for creators to build their own X402-powered experiences.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Creator & Developer Friendly</h3>
+          <p>Designed to inspire builders: simple to integrate, powerful to scale, and fully on-chain.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Get started in three simple steps</p>
+      </div>
+      
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Click to Access</h3>
+            <p>The user requests access to protected content, triggering the X402 flow I implemented.</p>
+          </div>
+        </div>
+
+        <div class="step-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Pay with USDC</h3>
+            <p>A real-time payment request is initiated using X402’s 402 response — handled seamlessly via Base USDC.</p>
+          </div>
+        </div>
+
+        <div class="step-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Enjoy Instantly</h3>
+            <p>Upon confirmation, access is granted instantly — showing how Web2 experiences can integrate decentralized payments with zero friction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-content">
+        <h2>See What’s Possible with X402 — Built by Me for the Future of Web Payments.</h2>
+        <p>This demo illustrates how frictionless micropayments can redefine digital content access. Explore it. Test it. Build on it.</p>
+        <a href="/authenticate" class="cta-button secondary">
+          <i class="fas fa-wallet"></i>
+          Try My Demo Now
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>X402 Demo</h4>
+          <p>Built by <b>Dexoryn</b> <br />
+             A hands-on showcase of on-chain micropayments using the X402 protocol on Coinbase Base.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.x402.org/" target="_blank"><i class="fas fa-chevron-right"></i> x402 Protocol</a></li>
+            <li><a href="https://github.com/dexoryn/x402-micropayments" target="_blank"><i class="fas fa-chevron-right"></i> GitHub Repository</a></li>
+            <li><a href="https://www.coinbase.com/" target="_blank"><i class="fas fa-chevron-right"></i> Coinbase</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/dexoryn/x402-micropayments" target="_blank" class="social-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://t.me/dexoryn" target="_blank" class="social-link" title="Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://x.com/dexoryn" target="_blank" class="social-link" title="X (Twitter)">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.x402.org/" target="_blank" class="social-link" title="x402">
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Dexoryn. Crafted with <i class="fas fa-heart"></i> to push the decentralized web forward.</p>
+      </div>
+    </footer>
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+      // Dynamically update the year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
