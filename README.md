@@ -1,25 +1,25 @@
 # x402 Micropayments
 
-This project is a movie streaming platform integrated with x402 for secure and seamless payments. Users can pay and watch movies directly through the x402 payment gateway. The backend handles x402 API interactions, ensuring reliable transaction processing and subscription management using x402 services.
+A movie streaming platform powered by x402 micropayments for secure, instant, and seamless payments. Users can pay and watch movies directly through the x402 payment gateway, while the backend handles API interactions for reliable transaction processing and subscription management on Base.
 
 ## Features
 
 ### Backend
-- Simple Express.js server with x402 payment middleware
-- Paywalled endpoint for accessing premium video content
-- Secure payment processing and verification
-- Base Sepolia testnet integration for easy testing
+ - Express.js server with x402 payment middleware
+ - Paywalled endpoints for premium video content
+ - Secure payment verification
+ - Integrated with Base Sepolia testnet for easy testing
 
 ### Frontend
-- **Modern, Professional UI** - Beautiful gradient design with smooth animations
-- **Responsive Landing Page** - Hero section with feature cards and "How It Works" guide
-- **Payment Processing Page** - Real-time status indicators with animated loader
-- **Premium Content Page** - Clean video player interface with payment confirmation
-- **Consistent Navigation** - Navbar with x402 branding and quick links across all pages
-- **Professional Footer** - Social links, quick navigation, and resource links
-- **Font Awesome Icons** - Enhanced visual design throughout the interface
-- **SEO Optimized** - Complete meta tags for social sharing (OpenGraph, Twitter Cards)
-- **Favicon Support** - Custom branding with SVG favicon
+- Modern UI & Smooth Animations – Professional gradient design
+- Responsive Landing Page – Hero section, feature cards, and "How It Works" guide
+- Payment Processing Page – Real-time status with animated loader
+- Premium Content Page – Clean video player interface with payment confirmation
+- Consistent Navigation – Navbar with x402 branding and quick links
+- Professional Footer – Social links, navigation, and resources
+- Font Awesome Icons – Visual enhancements throughout
+- SEO Optimized – Meta tags for OpenGraph & Twitter Cards
+- Favicon Support – Custom branding with SVG favicon
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ This project is a movie streaming platform integrated with x402 for secure and s
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/enlomy/x402-micropayments.git
+   git clone https://github.com/dexoryn/x402-micropayments.git
    cd x402-micropayments
    ```
 
@@ -40,7 +40,7 @@ This project is a movie streaming platform integrated with x402 for secure and s
    npm install
    ```
 
-3. Rename `.env.local` to `.env` and add the following variables (remember to replace `WALLET_ADDRESS` with your actual wallet address you want to receive payments for)
+3.Set environment variables: Rename .env.local to .env and update:
 
    ```
    WALLET_ADDRESS=your_ethereum_wallet_address
@@ -50,7 +50,7 @@ This project is a movie streaming platform integrated with x402 for secure and s
 
 4. Get Base Sepolia USDC for testing:
    - Visit https://faucet.circle.com/
-   - Select Base Sepolia in the network dropdown
+   - Select Base Sepolia and request test USDC
    - Request test USDC
 
 5. Start the development server:
@@ -58,27 +58,27 @@ This project is a movie streaming platform integrated with x402 for secure and s
    npm run dev
    ```
 
-6. Open your browser and navigate to `http://localhost:402`
+6. Open your browser and navigate to `http://localhost:4021`
 
 ## How It Works
 
 1. The server uses the `x402-express` middleware to protect the `/authenticate` endpoint
-2. When a user tries to access the protected endpoint, they are required to make a payment
-3. After successful payment, the user is redirected to `/video-content`, where the premium video content is served
-
+2. Users must complete a payment to access protected content.
+3. Upon successful payment, users are redirected to /video-content to watch premium videos.
+   
 ## Demo
-[Demo website](https://x402.enlomy.xyz/)
+[Demo website](https://x402-micropayments.vercel.app/)
 
 ## Customizing
 
-- To change the price of the video, modify the `price` parameter in `api/index.js`
-- To use a different video, update the video source in `public/video-content.html`
-- To deploy on Base mainnet, update the network configuration in `api/index.js` (you will need also need CDP API Keys and need to use a different Facilitator)
+- Video price: Update the `price` parameter in `api/index.js`
+- Video content: Replace the video source in `public/video-content.html`
+- Mainnet deployment: Update the network configuration in `api/index.js` and use proper CDP API keys
+  
+## 📞 Contact 
 
-## 📞 Contact Info
-
-### Telegram: [enlomy](https://t.me/enlomy)
+### Telegram: [dexoryn](https://t.me/dexoryn_me)
 
 ## 🍵 Tip
 
-### If you are interested in my projects, please 🔗fork or give me ⭐star
+### If you like this project, ⭐ star or 🔗 fork it to support development!
