@@ -67,7 +67,7 @@ A movie streaming platform powered by x402 micropayments for secure, instant, an
 3. Upon successful payment, users are redirected to /video-content to watch premium videos.
    
 ## Demo
-[Demo website](https://x402-micropayments.vercel.app/)
+[Demo website](https://x402-micropayments-six.vercel.app/)
 
 ## Customizing
 
